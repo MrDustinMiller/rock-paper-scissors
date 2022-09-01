@@ -37,7 +37,7 @@ const incrementComputerClick = function () {
 const playerScoreTracker = function () {
   let playerPointDisplay = document.querySelector("#player-points-label");
   let computerPointDisplay = document.querySelector("#computer-points-label");
-  let winningMessage = document.querySelector("#winner-message");
+  let winningMessage = document.querySelector(".game-over-prompt");
   let modal = document.querySelector(".modal")
   let close = document.querySelector(".close");
   let coverUpDisplay = document.querySelector("#cover");
@@ -101,7 +101,7 @@ const displayComputerChoice = function (playerChoice, compChoice) {
     computerChoiceMessage.innerHTML = " " + "✂️";
   } else if (compChoice !== "paper" && compChoice !== "scissors") { //would have to be rock
     computerChoiceMessage.innerHTML = " " + "🗿";
-  } else if (compChoice !== "scissors" && compChoice !== "rock") { //would have to be paper
+  } else if (compChoice !== "scissors" && compChoice !== "rock") { //would have to be scissors
     computerChoiceMessage.innerHTML = " " + "🧾";
   }
   
