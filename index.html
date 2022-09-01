@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">Welcome!</header>
+
+    <section id="game-details">
+        <h1>Rock-Paper-Scissors</h1>
+        <p>Select your choice of rock, paper, or scissors and play against a computer!</p>
+        <p id="game-counter"></p>
+
+        <div class="main-game-content">
+            <div class="player-content">
+                <div id="player-choices">
+                    <p id="rock">🗿</p>
+                    <p id="scissors">✂️</p>
+                    <p id="paper">🧾</p>
+                </div>
+
+                <div class="score-wrapper">
+                    <div class="player-score">
+                        <p>You chose:<label id="player-choice"></label></p>
+                        <p id="points">Your Score: <label id="player-points-label"></label></p>
+                    </div>
+
+                    <div class="computer-content">
+                        <p></p>
+                        <p>Computer chose:<label id="computer-choice"></label></p>
+                        <p id="points">Computer Score: <label id="computer-points-label"></label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-socials">
+                <a href="https://github.com/MrDustinMiller" target="_blank" class="github-logo"><i
+                        class="fa-brands fa-github fa-xl"></i></a>
+                <a href="https://linkedin.com/in/dustin-miller-76672516a/" target="_blank" class="linkedin-logo"><i
+                        class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            </div>
+
+            <section id="winner-section">
+                <p id="winner-message"></p>
+            </section>
+
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="modal" id="modalPopup">
+            <button class="close">✖</button>
+            <p class="game-over-prompt">Game Over!</p>
+            <button class="play-again">Play Again?</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Dustin Miller</p>
+    </footer>
+
+    <div id="cover"></div>
+    <script src="/rock-paper-scissors/scripts/game.js"></script>
+</body>
+
+</html>

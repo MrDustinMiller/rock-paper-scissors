@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kavoon&family=Permanent+Marker&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers';
+}
+
+.header {
+    background-color: rgba(238, 177, 199);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: rgba(238, 177, 199);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+html {
+    position: relative;
+    top: 8em;
+    background-image: url(/rock-paper-scissors/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(10, 10, 10);
+}
+
+h1 {
+    font-size: 50px;
+    padding: 15px;
+}
+
+#game-details {
+    /* border: 8px solid black; */
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#scissors {
+    cursor: pointer;
+    font-size: 90px;
+}
+
+#rock {
+    cursor: pointer;
+    font-size: 90px;
+}
+
+#paper {
+    cursor: pointer;
+    font-size: 88px;
+}
+
+.player-content {
+    padding: 50px;
+}
+
+#player-choices {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.player-score {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+}
+
+.score-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.computer-content {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+}
+
+#winner-message {
+    padding-bottom: 10px;
+}
+
+
+.modal {
+    visibility: hidden;
+    opacity: 97%;
+    height: 300px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 1);
+    color: #000;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 30px 70px;
+    position: relative;
+    left: 34em;
+    top: 8em;
+    z-index: 10;
+}
+
+button.close {
+    cursor: pointer;
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 82px;
+    margin-bottom: 15px;
+}
+
+.game-over-prompt {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+button.play-again {
+    cursor: pointer;
+    background-color: #f51d00;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+}
+
+@media (min-width: 1150px) {
+    html {
+        background-size: 150%;
+    }
+
+    .modal {
+        position: relative;
+        top: 10em;
+        left: 60em;
+    }
+}
+
+#cover {
+    visibility: hidden;
+    position: relative;
+    bottom: 27em;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.80;
+    background: rgb(110, 109, 109);
+    z-index: 8;
+}
