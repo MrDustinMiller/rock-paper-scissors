@@ -9,6 +9,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+-[Demo](https://mrdustinmiller.github.io/rock-paper-scissors/)
+
 ## 🤝 Support
 
 Give a ⭐️ if you like this project!
