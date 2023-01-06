@@ -11,7 +11,7 @@
 
 ## Live Demo
 
--[Demo](https://mrdustinmiller.github.io/rock-paper-scissors/)
+- [Demo](https://mrdustinmiller.github.io/rock-paper-scissors/)
 
 ## 🤝 Support
 
